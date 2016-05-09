@@ -1,4 +1,4 @@
-# Less Simple Flask Earthquakes app
+# Simple Heroku Flask Earthquakes app
 
 
 This is a more complicated version of the Basic Heroku Flask App lesson: [https://github.com/datademofun/heroku-basic-flask](https://github.com/datademofun/heroku-basic-flask).
