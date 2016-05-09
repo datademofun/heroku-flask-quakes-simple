@@ -8,9 +8,17 @@ It contains a skeleton of a Flask app that talks to the Google Maps API and USGS
 A more polished project can be found at: [https://github.com/datademofun/heroku-flask-quakes-lesssimple](https://github.com/datademofun/heroku-flask-quakes-lesssimple)
 
 
+# Tasks
+
+Try to add the features found in the [lesssimple version of this app](https://github.com/datademofun/heroku-flask-quakes-lesssimple) and deploy it to Heroku.
+
+The features include:
+
+1. Each place name of an earthquake should link to the earthquake's official USGS eventpage URL, i.e. [http://earthquake.usgs.gov/earthquakes/eventpage/us10005c88](http://earthquake.usgs.gov/earthquakes/eventpage/us10005c88)
+2. Each row should show the correct Google static map, not an image of Stanford.
+3. There should be a Google static map that shows every earthquake.
+
 # About the data
-
-
 
 Earthquake data comes from the USGS: http://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php
 

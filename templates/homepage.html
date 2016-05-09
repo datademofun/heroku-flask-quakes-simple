@@ -23,10 +23,8 @@
         {% for quake in quakes %}
         <tr class="location">
           <td>
-            <a href="http://earthquake.usgs.gov/earthquakes/eventpage/{{ quake.id }}">
               <p>{{ quake.place }}</p>
               <img src="{{quake.gmap_url}}">
-            </a>
           </td>
           <td class="time">{{ quake.time }}</td>
           <td class="magnitude">{{ quake.mag }}</td>

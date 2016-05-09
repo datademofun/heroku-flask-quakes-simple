@@ -18,7 +18,7 @@ def get_quake_data():
     return data
 
 
-def simple_static_gmap_url(location):
+def simple_static_gmap_url(location='Stanford,CA'):
     # This just returns a URL string, it doesn't get the URL via requests
     mydict = {'size': '300x200', 'maptype': 'hybrid', 'markers': location}
     url = GMAPS_URL + urlencode(mydict, doseq=True)
@@ -37,8 +37,7 @@ def homepage():
     # iterate through each quake, give them a "latlng" attribute
     # and then a separate Google Map URL
     for q in the_quakes:
-        q['latlng'] = q['latitude'] + ',' + q['longitude']
-        q['gmap_url'] = simple_static_gmap_url(q['latlng'])
+        q['gmap_url'] = simple_static_gmap_url()
 
     html = render_template('homepage.html',
                             time=the_time, quakes=the_quakes)
